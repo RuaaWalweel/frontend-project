@@ -26,6 +26,7 @@ body {
   margin: 30px;
   padding: 10px;
   top: 0;
+  height: 70px;
 }
 
 .logo {
@@ -56,7 +57,7 @@ body {
 .nav-links a {
   text-decoration: none;
   color: #edc1b2;
-  font-size: 17px;
+  font-size: 25px;
 }
 
 .nav-links a:hover {
@@ -181,6 +182,24 @@ body {
   color: #555;
   margin-bottom: 15px;
 }
+.big-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #bfbfbfe3;
+  position: relative;
+  padding-top: 60px;
+}
+.big-img img {
+  width: 50%;
+  aspect-ratio: 4 / 2;
+}
+.text {
+  position: absolute;
+  text-align: center;
+  font-size: xx-large;
+  top: 0;
+}
 .con {
   width: 100%;
   display: flex;
@@ -193,6 +212,17 @@ body {
 .img {
   width: 600px;
   position: relative;
+}
+.img h1 {
+  margin: 0;
+}
+.img p {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 25px;
+  color: #00000069;
+  text-align: center;
 }
 .order {
   padding: 5px 25px;
@@ -208,9 +238,26 @@ body {
 .img-con {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 100px;
+}
+@media screen and (max-width: 1550px) {
+  .img h1 {
+    font-size: 20px;
+  }
+  .img p {
+    font-size: 15px;
+  }
+  .navbar {
+    height: 45px;
+  }
+  .nav-links li a {
+    font-size: 15px;
+  }
+  .order {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 1000px) {
   .nav-links {
@@ -221,5 +268,45 @@ body {
   }
   .img-con {
     flex-direction: column;
+    align-items: center;
+  }
+  .img h1 {
+    font-size: 40px;
+  }
+  .img p {
+    font-size: 25px;
+  }
+  .big-img img {
+    width: 100%;
+  }
+  .text {
+    font-size: 20px;
+  }
+  .logo {
+    font-size: 10px;
+    width: 80px;
+  }
+  .nav-links li a {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .img {
+    width: 95%;
+  }
+  .img h1 {
+    font-size: 20px;
+  }
+  .img p {
+    font-size: 15px;
+  }
+  .overlay-text {
+    font-size: 17px;
+  }
+  .order {
+    font-size: 10px;
+  }
+  .text {
+    font-size: small;
   }
 }
