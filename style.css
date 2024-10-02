@@ -18,11 +18,11 @@ body {
   gap: 25px;
   background-color: #1a2456;
   width: 97%;
-  height: 55px;
+  height: fit-content;
   position: fixed;
   z-index: 1000;
   margin: 10px;
-  padding: 10px;
+  padding: 5px;
 }
 
 .logo {
@@ -76,7 +76,7 @@ body {
   width: 170px;
 }
 .currency-dropdown li{
-  width: 90px;
+  width: 100px;
 }
 .dropdown-content a,
 .currency-dropdown a {
@@ -204,8 +204,7 @@ body {
 .sold-out-text {
   color: #555;
   text-transform: uppercase;
-  font-size: 0.9em;
-  margin-top: 0px;
+  font-size: 0.8em;
   display: inline-block;
 }
 
