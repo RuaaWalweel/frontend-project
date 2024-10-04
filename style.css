@@ -10,6 +10,10 @@ body {
   background-color: #f0efed;
   color: #333;
   line-height: 1.6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
 }
 a{
   color: #ffcfc0;
@@ -285,14 +289,8 @@ a:hover{
   width: 100%;
   z-index: 1;
 }
-@keyframes show{
-  from{
-    opacity: 1;
-  }
-  to{
-    opacity: 0;
-  }
-}
+
+
 .img .img2:hover{
   opacity: 0;
   transition-duration: 1s;
@@ -408,6 +406,9 @@ h5{
   color: #ffcfc0;
   display: none;
 }
+.nav-links2{
+  display: none;
+}
 @media screen and (max-width: 1550px) {
   .img h1 {
     font-size: 20px;
@@ -426,8 +427,32 @@ h5{
   }
 }
 @media screen and (max-width: 1000px) {
+  
   .nav-links {
     display: none;
+  }
+  .nav-links2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+  }
+  
+  .nav-links2 li {
+    margin-right: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links2 a {
+    text-decoration: none;
+    color: #ffcfc0;
+    font-size: 14px;
+  }
+  
+  .nav-links2 a:hover {
+    color: #fabba6;
   }
   .container {
     grid-template-columns: 1fr;
@@ -462,7 +487,9 @@ h5{
     flex-direction: column;
     width: 100%;
     gap: 20px;
-
+  }
+  .overlay-text{
+    width: 100%;
   }
   .hlp{
     width: 100%;
@@ -496,6 +523,7 @@ h5{
   .sub {
     width: 100%;
   }
+  
 }
 @media screen and (max-width: 600px) {
   .img {
@@ -508,7 +536,7 @@ h5{
     font-size: 15px;
   }
   .overlay-text {
-    font-size: 17px;
+    font-size: 13px;
   }
   .order {
     font-size: 10px;
@@ -516,6 +544,7 @@ h5{
   .text {
     font-size: small;
   }
+  
   .sub {
     width: 97%;
     position: absolute;
