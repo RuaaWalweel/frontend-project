@@ -5,6 +5,17 @@
   box-sizing: border-box;
 }
 
+#view{
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+#view.show{
+  transform: translateY(0);
+  opacity: 1;
+  transition: 1s ease-in;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f0efed;
